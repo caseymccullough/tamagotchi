@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    background-image: url(https://i3.imgpile.com/i/8T4BE.png);
+    font-family: "Open Sans", sans-serif;
+    background-size: cover;
+}
+
+h2 {
+  color: #424242;
+}
+
+.general-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.shadow {
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  width: 100px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  animation: boingShadow 1s ease-in-out infinite alternate;
+}
+
+.egg {
+  margin: 20px;
+  width: 100px;
+  height: 125px;
+  background-color: #faf3c0;
+  border: 1px solid #000;
+  border-top-left-radius: 50% 60%;
+  border-top-right-radius: 50% 60%;
+  border-bottom-left-radius: 50% 40%;
+  border-bottom-right-radius: 50% 40%;
+  transform-origin: center bottom;
+  animation: boing 1s ease-in-out infinite alternate;
+  box-shadow: inset -5px -10px rgba(168, 164, 176, 0.5);
+}
+
+.spots {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  height: 15px;
+  width: 10px;
+  background-color: #a8a4b0;
+  border-top-left-radius: 60% 60%;
+  border-top-right-radius: 40% 40%;
+  border-bottom-left-radius: 40% 40%;
+  border-bottom-right-radius: 60% 60%;
+}
+.spots:before {
+  position: absolute;
+  left: -10px;
+  top: 16px;
+  content: '';
+  display: block;
+  height: 13px;
+  width: 7px;
+  background-color: #a8a4b0;
+  border-top-left-radius: 60% 60%;
+  border-top-right-radius: 40% 40%;
+  border-bottom-left-radius: 40% 40%;
+  border-bottom-right-radius: 60% 60%;
+}
+.spots:after {
+  position: absolute;
+  left: 0px;
+  top: 25px;
+  content: '';
+  display: block;
+  height: 10px;
+  width: 5px;
+  background-color: #a8a4b0;
+  border-top-left-radius: 60% 60%;
+  border-top-right-radius: 40% 40%;
+  border-bottom-left-radius: 40% 40%;
+  border-bottom-right-radius: 60% 60%;
+}
+
+@keyframes boing {
+  from {
+    transform: scale(1, 1) translateY(-20px);
+  }
+  to {
+    transform: scale(1.2, 0.8) translateY(0px);
+  }
+}
+@keyframes boingShadow {
+  from {
+    transform: scale(0.9, 1);
+  }
+  to {
+    transform: scale(1.2, 0.8);
+  }
+}
+  
+
+/* ===============================
+  CUSTOM SEIR STYLES
+=============================== */
+
+/* ===============================
+  Layout STYLES
+=============================== */
+
+/* ===============================
+  Tamagotchi STYLES
+=============================== */
